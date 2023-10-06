@@ -1,0 +1,5 @@
+<div class="labirinto">
+    <div class="celula" *ngFor="let cell of labirinto">
+        <div class="celula" *ngFor="let row of cell" [ngClass]="{ 'obstaculo': row }"></div>
+    </div>
+</div>

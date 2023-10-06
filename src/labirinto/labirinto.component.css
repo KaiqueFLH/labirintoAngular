@@ -1,0 +1,46 @@
+#bg{
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parede{
+    width: 80%;
+    height: 80%;
+    border: 1px solid black;
+    color: black;
+    background-color: rgb(177, 207, 197);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    
+}
+#linha{
+    width: 1fr;
+    height: 1fr;
+    background-color: red;
+    
+}
+.labirinto {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+    
+    width: 980px; /* Ajuste o tamanho conforme necessário */
+    margin: 0 auto;
+  }
+  
+  .celula {
+    width: 100%;
+    
+    padding-bottom: 100%; /* Mantém cada célula quadrada */
+    background-color: #fff; /* Cor do caminho */
+    border: 1px solid #000; /* Borda para representar as paredes */
+  }
+  
+  .celula.obstaculo {
+    background-color: #000; /* Cor dos obstáculos */
+  }
+  
