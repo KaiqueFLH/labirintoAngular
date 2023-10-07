@@ -1,5 +1,23 @@
-<div class="labirinto">
-    <div class="celula" *ngFor="let cell of labirinto">
-        <div class="celula" *ngFor="let row of cell" [ngClass]="{ 'obstaculo': row }"></div>
+<section id="bg">
+
+    <div class="divTitulo">
+        <h1>Labirinto - Angular</h1>
+        <p>Os quadrados em preto são seus obstáculos, tente encontrar a saída passando pelos quadrados brancos, boa sorte!</p>
     </div>
-</div>
+
+    <div id="divGeral">
+        <div class="labirinto">
+            <div *ngFor="let row of labirinto; let rowIndex = index">
+                <div *ngFor="let cell of row; let colIndex = index" class="celula" [ngClass]="{'obstaculo': cell}">
+                    <div *ngIf="personagemPosicao.x === rowIndex && personagemPosicao.y === colIndex" class="personagem">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+        <div class="div-btn">
+            <button (click)="reiniciar()" class="btn">Reiniciar Labirinto</button>
+        </div>
+    </div>
+</section>
