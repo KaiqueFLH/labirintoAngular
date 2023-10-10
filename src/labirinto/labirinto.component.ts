@@ -34,6 +34,7 @@ export class LabirintoComponent implements OnInit {
       [true, false, true, false, true, true, true, true, true, false, true],
       [true, false, false, false, false, false, false, false, true, false, true],
       [true, true, true, true, true, true, true, true, true, false, true],
+      
     ];
 
     this.labirinto = layout;
@@ -83,7 +84,7 @@ export class LabirintoComponent implements OnInit {
     }
 
     if (this.verificaVitoria(x, y)) {
-      alert("Você venceu!");  
+      alert("Você desceu para serie B de novo, Pequeno Vasco! ");  
       this.gerarLabirinto();
     }
     return false;

@@ -10,6 +10,7 @@
             <div *ngFor="let row of labirinto; let rowIndex = index">
                 <div *ngFor="let cell of row; let colIndex = index" class="celula" [ngClass]="{'obstaculo': cell}">
                     <div *ngIf="personagemPosicao.x === rowIndex && personagemPosicao.y === colIndex" class="personagem">
+                     
                     </div>
                 </div>
             </div>
@@ -17,7 +18,7 @@
     
     
         <div class="div-btn">
-            <button (click)="reiniciar()" class="btn">Reiniciar Labirinto</button>
+            <button (click)="reiniciar()" class="btn">Reiniciar Jogo</button>
         </div>
     </div>
 </section>

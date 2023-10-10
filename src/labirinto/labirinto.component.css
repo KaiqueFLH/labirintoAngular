@@ -1,9 +1,9 @@
 #bg{
   width: 100%;
-  height: 100vh;
+  height: 300vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   gap: 100px;
   background-color: #f3f3f3;
@@ -11,31 +11,30 @@
 
 #divGeral{
   width: 75%;
-  height: 60%;
+  height: 28%;
   display: flex;
   flex-direction: column;
-  gap: 100px;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(138, 221, 253);
+  gap: 495px;
+  padding-top: 50px;
+  justify-content: start;
+  background-color: rgb(0, 87, 119);
   border: 5px solid rgb(92, 92, 179);
   border-radius: 10px;
 }
-
 
 .labirinto {
   display: grid;
   grid-template-columns: repeat(19, 1fr);
   grid-template-rows: repeat(11, 1fr);
-  width: 1000px;
+  width: 1060px;
   grid-gap: 2px;
   margin: 0 auto;
-  background-color: rgb(67, 155, 238);
+  background-color: rgb(122, 154, 184);
 }
 
 .celula {
   width: 100%;
-  height: 100%;
+  height: 300%;
   background-color: #f3f3f3;
   border: 1px solid #ccc;
   display: flex;
@@ -45,13 +44,20 @@
 
 .celula.obstaculo {
   background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .personagem {
   width: 100%;
   height: 100%;
-  background-color: rebeccapurple;
-  border: 1px solid rebeccapurple;
+  background-image: url("../assets/vasco.png");
+  background-size: 50px;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .div-btn{
